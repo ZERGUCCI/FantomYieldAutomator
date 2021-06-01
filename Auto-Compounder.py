@@ -17,11 +17,6 @@ def startChrome():
     options.add_argument("user-data-dir=PATH TO YOUR CHROME PROFILE SO YOU DONT NEED SEED PHRASE") #Path to your chrome profile
     options.add_argument("--enable-gpu")
     driver = webdriver.Chrome(chrome_options=options)
-    
-    #setup chrome with just metamask (seedphrase needed)
-    #chop = webdriver.ChromeOptions()
-    #chop.add_extension("/Users/sasuke/Desktop/coding/Yield Farming/metamask.crx")
-    #driver = webdriver.Chrome(chrome_options=chop)
 
     return driver
 
